@@ -18,11 +18,13 @@ bool saveImageText(const msdfgen::BitmapConstRef<byte, N> &bitmap, const char *f
 template <int N>
 bool saveImageText(const msdfgen::BitmapConstRef<float, N> &bitmap, const char *filename, YDirection outputYDirection);
 
+#ifdef MSDFGEN_USE_LIBPNG
+
 template <int N>
 bool saveImage(const msdfgen::BitmapConstRef<byte, N> &bitmap, ImageFormat format, const char *filename, YDirection outputYDirection) {
     switch (format) {
         case ImageFormat::PNG:
-            return msdfgen::savePng(bitmap, filename);
+            //return msdfgen::savePng(bitmap, filename);
         case ImageFormat::BMP:
             return msdfgen::saveBmp(bitmap, filename);
         case ImageFormat::TIFF:
@@ -64,6 +66,7 @@ bool saveImage(const msdfgen::BitmapConstRef<float, N> &bitmap, ImageFormat form
     }
     return false;
 }
+#endif
 
 template <int N>
 bool saveImageBinary(const msdfgen::BitmapConstRef<byte, N> &bitmap, const char *filename, YDirection outputYDirection) {

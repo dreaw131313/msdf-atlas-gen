@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\msdf-atlas-gen\artery-font-export.cpp" />
+    <ClCompile Include="..\msdf-atlas-gen\bitmap-blit.cpp" />
+    <ClCompile Include="..\msdf-atlas-gen\charset-parser.cpp" />
+    <ClCompile Include="..\msdf-atlas-gen\Charset.cpp" />
+    <ClCompile Include="..\msdf-atlas-gen\csv-export.cpp" />
+    <ClCompile Include="..\msdf-atlas-gen\FontGeometry.cpp" />
+    <ClCompile Include="..\msdf-atlas-gen\glyph-generators.cpp" />
+    <ClCompile Include="..\msdf-atlas-gen\GlyphGeometry.cpp" />
+    <ClCompile Include="..\msdf-atlas-gen\image-encode.cpp" />
+    <ClCompile Include="..\msdf-atlas-gen\json-export.cpp" />
+    <ClCompile Include="..\msdf-atlas-gen\RectanglePacker.cpp" />
+    <ClCompile Include="..\msdf-atlas-gen\shadron-preview-generator.cpp" />
+    <ClCompile Include="..\msdf-atlas-gen\size-selectors.cpp" />
+    <ClCompile Include="..\msdf-atlas-gen\TightAtlasPacker.cpp" />
+    <ClCompile Include="..\msdf-atlas-gen\utf8.cpp" />
+    <ClCompile Include="..\msdf-atlas-gen\Workload.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\msdf-atlas-gen\artery-font-export.h" />
+    <ClInclude Include="..\msdf-atlas-gen\AtlasGenerator.h" />
+    <ClInclude Include="..\msdf-atlas-gen\AtlasStorage.h" />
+    <ClInclude Include="..\msdf-atlas-gen\bitmap-blit.h" />
+    <ClInclude Include="..\msdf-atlas-gen\BitmapAtlasStorage.h" />
+    <ClInclude Include="..\msdf-atlas-gen\BitmapAtlasStorage.hpp" />
+    <ClInclude Include="..\msdf-atlas-gen\Charset.h" />
+    <ClInclude Include="..\msdf-atlas-gen\csv-export.h" />
+    <ClInclude Include="..\msdf-atlas-gen\DynamicAtlas.h" />
+    <ClInclude Include="..\msdf-atlas-gen\DynamicAtlas.hpp" />
+    <ClInclude Include="..\msdf-atlas-gen\FontGeometry.h" />
+    <ClInclude Include="..\msdf-atlas-gen\glyph-generators.h" />
+    <ClInclude Include="..\msdf-atlas-gen\GlyphBox.h" />
+    <ClInclude Include="..\msdf-atlas-gen\GlyphGeometry.h" />
+    <ClInclude Include="..\msdf-atlas-gen\image-encode.h" />
+    <ClInclude Include="..\msdf-atlas-gen\image-save.h" />
+    <ClInclude Include="..\msdf-atlas-gen\image-save.hpp" />
+    <ClInclude Include="..\msdf-atlas-gen\ImmediateAtlasGenerator.h" />
+    <ClInclude Include="..\msdf-atlas-gen\ImmediateAtlasGenerator.hpp" />
+    <ClInclude Include="..\msdf-atlas-gen\json-export.h" />
+    <ClInclude Include="..\msdf-atlas-gen\msdf-atlas-gen.h" />
+    <ClInclude Include="..\msdf-atlas-gen\rectangle-packing.h" />
+    <ClInclude Include="..\msdf-atlas-gen\rectangle-packing.hpp" />
+    <ClInclude Include="..\msdf-atlas-gen\Rectangle.h" />
+    <ClInclude Include="..\msdf-atlas-gen\RectanglePacker.h" />
+    <ClInclude Include="..\msdf-atlas-gen\Remap.h" />
+    <ClInclude Include="..\msdf-atlas-gen\shadron-preview-generator.h" />
+    <ClInclude Include="..\msdf-atlas-gen\size-selectors.h" />
+    <ClInclude Include="..\msdf-atlas-gen\TightAtlasPacker.h" />
+    <ClInclude Include="..\msdf-atlas-gen\types.h" />
+    <ClInclude Include="..\msdf-atlas-gen\utf8.h" />
+    <ClInclude Include="..\msdf-atlas-gen\Workload.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{11047570-332d-4edc-adb9-485f372c0403}</ProjectGuid>
+    <RootNamespace>msdfatlasgen</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)_$(Platform)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)bin-int\$(Configuration)_$(Platform)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)_$(Platform)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)bin-int\$(Configuration)_$(Platform)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions);MSDF_ATLAS_PUBLIC=;MSDFGEN_DISABLE_PNG;MSDFGEN_PUBLIC=;MSDF_ATLAS_NO_ARTERY_FONT=</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)msdfgen;$(SolutionDir)msdfgen\ext;$(SolutionDir)artery-font-format;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(SolutionDIr)msdfgen\bin\$(Configuration)_$(Platform)\msdfgen-ext\msdfgen-ext.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>$(SolutionDIr)msdfgen\bin\$(Configuration)_$(Platform)\msdfgen-ext\msdfgen-ext.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);MSDF_ATLAS_PUBLIC=;MSDFGEN_DISABLE_PNG;MSDFGEN_PUBLIC=;MSDF_ATLAS_NO_ARTERY_FONT=</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)msdfgen;$(SolutionDir)msdfgen\ext;$(SolutionDir)artery-font-format;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>$(SolutionDIr)msdfgen\bin\$(Configuration)_$(Platform)\msdfgen-ext\msdfgen-ext.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

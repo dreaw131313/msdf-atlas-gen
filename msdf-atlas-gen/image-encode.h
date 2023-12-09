@@ -5,6 +5,8 @@
 #include <msdfgen.h>
 #include "types.h"
 
+#ifdef MSDFGEN_USE_LIBPNG
+
 namespace msdf_atlas {
 
 // Functions to encode an image as a sequence of bytes in memory
@@ -18,3 +20,5 @@ bool encodePng(std::vector<byte> &output, const msdfgen::BitmapConstRef<float, 3
 bool encodePng(std::vector<byte> &output, const msdfgen::BitmapConstRef<float, 4> &bitmap);
 
 }
+
+#endif
