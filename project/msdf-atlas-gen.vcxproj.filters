@@ -63,9 +63,6 @@
     <ClCompile Include="..\msdf-atlas-gen\Workload.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\msdf-atlas-gen\artery-font-export.h">

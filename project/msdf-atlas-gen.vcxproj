@@ -27,7 +27,6 @@
     <ClCompile Include="..\msdf-atlas-gen\TightAtlasPacker.cpp" />
     <ClCompile Include="..\msdf-atlas-gen\utf8.cpp" />
     <ClCompile Include="..\msdf-atlas-gen\Workload.cpp" />
-    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\msdf-atlas-gen\artery-font-export.h" />
